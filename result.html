@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shot Recommendation Result</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        .result-container { display: inline-block; padding: 20px; border: 1px solid #ccc; }
+        .orientation { font-size: 1.5em; margin-bottom: 20px; }
+        .shot { font-size: 2em; color: #28a745; }
+        .back-button { margin-top: 30px; }
+        button { padding: 10px 20px; }
+    </style>
+</head>
+<body>
+    <h1>Shot Recommendation</h1>
+    <div class="result-container">
+        <div class="orientation">
+            <strong>Batsman Orientation:</strong> {{ orientation }}
+        </div>
+        <div class="shot">
+            {{ shot }}
+        </div>
+        <div class="back-button">
+            <a href="/"><button>Analyze Another Video</button></a>
+        </div>
+    </div>
+</body>
+</html>
